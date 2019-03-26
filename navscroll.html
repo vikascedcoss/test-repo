@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://idangero.us/swiper/dist/css/swiper.min.css">
+	<style>
+.scroll-wrapper {
+	max-width: 500px;
+	margin: 0 auto;
+	width: 100%;
+	overflow: hidden;
+	position: relative;
+}
+.nav.nav-tabs {
+	background: transparent none repeat scroll 0 0;
+	position: relative;
+	white-space: nowrap;
+	z-index: 1;
+	padding:0;
+	/*transition: 0.3s all;*/
+}
+.nav.nav-tabs > li {
+	display: inline-block;
+	float: none;
+	padding: 10px;
+	text-align: center;
+}
+
+	</style>
+
+</head>
+<body>
+	<div class="scroll-wrapper swiper-container">
+		<ul class="nav nav-tabs swiper-wrapper"> 
+			<li class="swiper-slide"><a data-toggle="tab" href="#home" class="active">Natashia</a></li>
+			<li class="swiper-slide"><a data-toggle="tab" href="#menu1">Daphne</a></li>
+			<li class="swiper-slide"><a data-toggle="tab" href="#menu2">Brenton</a></li>
+			<li class="swiper-slide"><a data-toggle="tab" href="#menu3">Gala</a></li>
+			<li class="swiper-slide"><a data-toggle="tab" href="#menu4">Christen</a></li>
+			<li class="swiper-slide"><a data-toggle="tab" href="#menu5">Howard</a></li>
+			<li class="swiper-slide"><a data-toggle="tab" href="#menu6">Casey</a></li>
+		</ul>
+		<div class="swiper-button-prev"></div>
+		<div class="swiper-button-next"></div>
+	</div>
+
+	<div class="tab-content">
+	  <div id="home" class="tab-pane fade in active">
+	    <h3>HOME</h3>
+	    <p>Some content.</p>
+	  </div>
+	  <div id="menu1" class="tab-pane fade">
+	    <h3>Menu 1</h3>
+	    <p>Some content in menu 1.</p>
+	  </div>
+	  <div id="menu2" class="tab-pane fade">
+	    <h3>Menu 2</h3>
+	    <p>Some content in menu 2.</p>
+	  </div>
+	  <div id="menu3" class="tab-pane fade">
+	    <h3>Menu 2</h3>
+	    <p>Some content in menu 2.</p>
+	  </div>
+	  <div id="menu4" class="tab-pane fade">
+	    <h3>Menu 2</h3>
+	    <p>Some content in menu 2.</p>
+	  </div>
+	  <div id="menu5" class="tab-pane fade">
+	    <h3>Menu 2</h3>
+	    <p>Some content in menu 2.</p>
+	  </div>
+	  <div id="menu6" class="tab-pane fade">
+	    <h3>Menu 2</h3>
+	    <p>Some content in menu 2.</p>
+	  </div>
+	</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<script src="https://idangero.us/swiper/dist/js/swiper.min.js"></script>
+<script type="text/javascript">
+	  jQuery(document).ready(function($) {
+		  	var swiper = new Swiper('.swiper-container', {
+	      slidesPerView: 4,
+	      spaceBetween: 1,
+
+	      navigation: {
+        	nextEl: '.swiper-button-next',
+        	prevEl: '.swiper-button-prev',
+      		},
+	      breakpoints: {
+	        1024: {
+	          slidesPerView: 4,
+	          spaceBetween: 1,
+	        },
+	        768: {
+	          slidesPerView: 3,
+	          spaceBetween: 1,
+	        },
+	        640: {
+	          slidesPerView: 2,
+	          spaceBetween: 1,
+	        },
+	        320: {
+	          slidesPerView: 1,
+	          spaceBetween: 1,
+	        }
+	      }
+	    });
+	  });
+</script>
+</body>
+</html>
